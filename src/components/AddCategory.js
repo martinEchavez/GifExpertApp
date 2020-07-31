@@ -10,8 +10,9 @@ const AddCategory = ({ setCategories }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // Trim Eliminar espacios en blanco de ambos lados de una cadena
         if(inputValue.trim().length > 1) {
-            setCategories(cats => [...cats, inputValue])
+            setCategories(cats => [inputValue, ...cats ])
             setInputValue('')
         }
     }
