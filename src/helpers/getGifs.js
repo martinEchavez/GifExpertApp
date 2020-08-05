@@ -1,6 +1,4 @@
-require('dotenv').config()
-
-const { REACT_APP_URL, REACT_APP_LIMIT, REACT_APP_API_KEY } = process.env
+const { REACT_APP_URL, REACT_APP_LIMIT, REACT_APP_API_KEY } = require('../config');
 const URL = REACT_APP_URL
 const limit = REACT_APP_LIMIT
 const api_key = REACT_APP_API_KEY
